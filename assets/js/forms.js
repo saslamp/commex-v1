@@ -16,3 +16,24 @@
     }, false);
   });
 })();
+
+document.querySelector('#loginForm').addEventListener('submit', login);
+
+function login(evt) {
+  evt.preventDefault();
+
+  let email = document.getElementById('email').value;
+  let pwd = document.getElementById('password').value;
+  if (!email || !pwd) {
+    return alert('fill all fields');
+  }
+  if (pwd == 'admin1234') {
+    if (email == 'test@commex.mvp') {
+      window.location = "https://saslamp.github.io/commex-v1/pages/dashboard.html"
+    } else {
+      alert('wrong email address')
+    }
+  } else {
+    alert('wrong password')
+  }
+}
