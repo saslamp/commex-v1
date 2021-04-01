@@ -29,7 +29,7 @@ function login(evt) {
   }
   if (pwd == 'admin1234') {
     if (email == 'test@commex.mvp') {
-      window.location = "https://saslamp.github.io/commex-v1/pages/dashboard.html"
+      window.location = "./dashboard.html"
     } else {
       alert('wrong email address')
     }
